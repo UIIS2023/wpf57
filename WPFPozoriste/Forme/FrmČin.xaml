@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFPozoriste.Forme.FrmČin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPozoriste.Forme"
+        mc:Ignorable="d"
+       Title="Dodaj/Izmijeni čin"  Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\S\Downloads\pozoriste1.jpg"></ImageBrush>
+        </Grid.Background>
+        <Label Content="Naziv čina:" Background="White" FontSize="20" HorizontalAlignment="Left" Margin="78,94,0,0" VerticalAlignment="Top" Width="120" Height="50"/>
+        <TextBox Name="txtNazivCina" HorizontalAlignment="Left" Height="50" Margin="260,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="312"/>
+        <Button FontSize="20" Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="104,319,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="BtnSacuvaj_Click"/>
+        <Button FontSize="20" Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="443,319,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="BtnOtkazi_Click"/>
+        <Label Content="Predstava:" FontSize="20" Background="White" HorizontalAlignment="Left" Margin="78,190,0,0" VerticalAlignment="Top" Height="46" Width="120"/>
+        <ComboBox Name="cbPredstava"  HorizontalAlignment="Left" Margin="260,190,0,0" VerticalAlignment="Top" Width="312" Height="50" DisplayMemberPath="Naziv" SelectedValuePath="PredstavaID"/>
+
+    </Grid>
+</Window>

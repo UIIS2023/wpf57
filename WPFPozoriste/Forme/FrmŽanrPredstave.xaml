@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFPozoriste.Forme.FrmŽanrPredstave"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPozoriste.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmijeni žanr" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\S\Downloads\pozoriste1.jpg"></ImageBrush>
+        </Grid.Background>
+        <Label Content="Naziv žanra:" Background="White" FontSize="20" HorizontalAlignment="Left" Margin="84,106,0,0" VerticalAlignment="Top" Height="52" Width="166"/>
+        <TextBox Name="txtNazivZanra"  HorizontalAlignment="Left" Height="52" Margin="354,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="294"/>
+        <Button Name="btnSacuvaj" Content="Sačuvaj" FontSize="20" HorizontalAlignment="Left" Margin="198,317,0,0" VerticalAlignment="Top" Width="117" Height="58" Click="BtnSacuvaj_Click"/>
+        <Button Name="btnOtkazi" Content="Otkaži" FontSize="20" HorizontalAlignment="Left" Margin="457,317,0,0" VerticalAlignment="Top" Width="122" Height="58" Click="BtnOtkazi_Click"/>
+
+    </Grid>
+</Window>
